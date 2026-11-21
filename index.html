@@ -3,54 +3,187 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Workout TV</title>
-  <meta name="description" content="Follow-along bodyweight workouts on your TV.">
+  <title>Home Workout TV — bodyweight sessions on Apple TV</title>
+  <meta name="description" content="Four bodyweight sessions on Apple TV: Gentle Mobility, Easy Full Body, Easy Core, and Seated Stretch. Each move has a countdown and a form cue.">
+  <link rel="canonical" href="https://erdtheturd.github.io/homeworkouttv/">
+  <meta name="theme-color" content="#100e0c">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Home Workout TV">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://erdtheturd.github.io/homeworkouttv/">
+  <meta property="og:title" content="Home Workout TV — bodyweight sessions on Apple TV">
+  <meta property="og:description" content="Four bodyweight sessions on Apple TV. Each move has a countdown and a form cue.">
+  <meta property="og:image" content="https://erdtheturd.github.io/homeworkouttv/favicon.svg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Home Workout TV — bodyweight sessions on Apple TV">
+  <meta name="twitter:description" content="Four bodyweight sessions on Apple TV. Each move has a countdown and a form cue.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <p class="wordmark">Home Workout TV</p>
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="./" aria-current="page">Home Workout TV</a>
+      <ul class="nav-links">
+        <li><a href="#sessions">Sessions</a></li>
+        <li><a href="#safety">Safety</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
-      <p class="eyebrow">For Apple TV</p>
-      <h1>Follow-along workouts, right on your TV.</h1>
-      <p class="lede">Home Workout TV is a simple way to move at home. Choose a built-in bodyweight session, then follow each move with a timer and short form cues — no equipment and no account required.</p>
+      <div class="wrap">
+        <p class="kicker">For Apple TV</p>
+        <h1>Four sessions.<br>On the TV.</h1>
+        <p class="lede">Gentle Mobility, Easy Full Body, Easy Core, and Seated Stretch. Each one is about five minutes: a warm-up, timed moves, and a cooldown. The current move, a countdown, and a form cue stay on screen.</p>
+      </div>
     </section>
 
-    <section class="how" id="how-it-works">
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li>
-          <h3>Pick a session</h3>
-          <p>Browse a short list of built-in workouts on your TV, each with a warm-up, timed moves, and a cooldown.</p>
-        </li>
-        <li>
-          <h3>Follow along</h3>
-          <p>The player shows the current move, a countdown, a plain form cue, and what’s next — large enough to read from the couch.</p>
-        </li>
-        <li>
-          <h3>Optional heart rate, planned</h3>
-          <p>Live heart rate from Apple Watch is planned as an optional extra. It is not available yet.</p>
-        </li>
-      </ol>
+    <section class="stage" aria-labelledby="player-caption">
+      <div class="wrap">
+        <figure class="tv">
+          <div class="tv-bezel" aria-label="Mockup of the Home Workout TV player on Apple TV.">
+            <div class="tv-screen tv-player">
+              <div class="player-top">
+                <div>
+                  <p class="player-workout">Easy Full Body</p>
+                  <p class="player-phase">Move</p>
+                </div>
+                <div class="hr-panel">
+                  <p class="hr-label">Heart Rate</p>
+                  <p class="hr-status">No watch connected</p>
+                </div>
+              </div>
+
+              <div class="player-main">
+                <div class="player-move">
+                  <h2 class="move-name">Bodyweight Squats</h2>
+                  <p class="move-cue">Sit hips back. Keep heels down.</p>
+                  <p class="move-safety">Stop if you feel pain or dizziness.</p>
+                </div>
+                <div class="player-side">
+                  <p class="countdown">0:28</p>
+                  <div class="next">
+                    <p class="next-label">Next</p>
+                    <p class="next-name">Wall Push-Ups</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="player-controls">
+                <span class="tv-btn tv-btn-primary">Pause</span>
+                <span class="tv-btn tv-btn-ghost">Exit</span>
+              </div>
+            </div>
+          </div>
+          <figcaption id="player-caption">HTML and CSS mockup of the player, drawn from the tvOS app — not a screenshot.</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section class="safety" id="safety">
-      <h2>A note on safety</h2>
-      <p class="safety-note">Stop if you feel pain or dizziness.</p>
-      <p>Move at a pace that feels right for you, and skip anything that doesn’t. Home Workout TV is a follow-along exercise app, not medical advice.</p>
+    <section class="sessions" id="sessions" aria-labelledby="sessions-title">
+      <div class="wrap">
+        <h2 id="sessions-title">The list on the TV</h2>
+        <p class="section-lede">Pick one of four built-in bodyweight sessions. No equipment. No account.</p>
+
+        <figure class="tv">
+          <div class="tv-bezel" aria-label="Mockup of the Home Workout TV session list on Apple TV.">
+            <div class="tv-screen tv-list">
+              <header class="list-head">
+                <h3>Home Workout TV</h3>
+                <p>Follow-along bodyweight sessions. No equipment needed.</p>
+              </header>
+
+              <div class="card-row">
+                <article class="workout-card is-focused">
+                  <p class="card-duration">5 min</p>
+                  <h4>Gentle Mobility</h4>
+                  <p class="card-summary">Slow joint circles and easy stretches to loosen up.</p>
+                  <p class="card-moves">8 moves</p>
+                </article>
+                <article class="workout-card">
+                  <p class="card-duration">5 min</p>
+                  <h4>Easy Full Body</h4>
+                  <p class="card-summary">Light bodyweight moves at a relaxed pace.</p>
+                  <p class="card-moves">9 moves</p>
+                </article>
+                <article class="workout-card">
+                  <p class="card-duration">5 min</p>
+                  <h4>Easy Core</h4>
+                  <p class="card-summary">Gentle standing and floor moves for the midsection.</p>
+                  <p class="card-moves">8 moves</p>
+                </article>
+                <article class="workout-card">
+                  <p class="card-duration">5 min</p>
+                  <h4>Seated Stretch</h4>
+                  <p class="card-summary">Chair-friendly stretches you can do while sitting.</p>
+                  <p class="card-moves">8 moves</p>
+                </article>
+              </div>
+
+              <p class="list-safety">Stop if you feel pain or dizziness.</p>
+            </div>
+          </div>
+          <figcaption>The session list, with the same titles, summaries, and durations as the app.</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section class="support" id="support">
-      <h2>Support</h2>
-      <p>Questions or feedback? Email <a href="mailto:support@homeworkouttv.com">support@homeworkouttv.com</a>.</p>
+    <section class="onscreen" id="onscreen" aria-labelledby="onscreen-title">
+      <div class="wrap">
+        <h2 id="onscreen-title">What’s on screen</h2>
+        <dl class="spec">
+          <div>
+            <dt>Current move</dt>
+            <dd>Large type, plus a short form cue — for example, “Sit hips back. Keep heels down.”</dd>
+          </div>
+          <div>
+            <dt>Countdown</dt>
+            <dd>A timer for that move, big enough to read from the couch.</dd>
+          </div>
+          <div>
+            <dt>Next</dt>
+            <dd>The upcoming move, or Finish.</dd>
+          </div>
+          <div>
+            <dt>Heart rate <span class="soon">Coming soon</span></dt>
+            <dd>Live heart rate from Apple Watch is planned, not shipping yet. Today the panel reads “No watch connected.”</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="safety" id="safety" aria-labelledby="safety-title">
+      <div class="wrap">
+        <h2 id="safety-title">Safety</h2>
+        <p class="safety-line">Stop if you feel pain or dizziness.</p>
+        <p>Move at a pace that feels right for you, and skip anything that doesn’t. Home Workout TV is a follow-along exercise app, not medical advice.</p>
+      </div>
+    </section>
+
+    <section class="support" id="support" aria-labelledby="support-title">
+      <div class="wrap">
+        <h2 id="support-title">Support</h2>
+        <p>Questions or feedback? Email <a href="mailto:support@homeworkouttv.com">support@homeworkouttv.com</a>.</p>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Home Workout TV · homeworkouttv.com</p>
+    <div class="wrap footer-inner">
+      <p>Home Workout TV for Apple TV</p>
+      <a href="mailto:support@homeworkouttv.com">support@homeworkouttv.com</a>
+    </div>
   </footer>
 </body>
 </html>
